@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    box-sizing: border-box;
+    font-size: 16px;
+}
+@font-face {
+    font-family: Segoe UI ;
+    src: url('../fonts/Segoe\ UI.ttf');
+}
+:root {
+    --headerColor: rgb(42, 47, 50);
+    --inputBackground: rgb(50, 55, 57);
+    --chatsBackground: rgb(19, 28, 33);
+    --homeBackground: rgb(38, 45, 49);
+    --nameColor: rgb(226, 226, 227);
+    --chatColor:rgb(169, 170, 172) ;
+    --linkColor: rgb(7, 151, 136);
+
+}
+
+body {
+    width: 100%;
+    height: 100VH;
+
+    display: flex;
+   
+    justify-content: center;
+}
+
+body section.chats {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 26.25rem;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}  
+body section.home {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+/*==HEADER==*/
+section.chats header {
+    width: 100%;
+    height: 59px;
+    background-color: var(--headerColor);
+}
+section.chats header div.header{
+    padding: .5rem .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+section.chats header div img.profile {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+/*ícones do header*/
+.newChatIcon{
+    width: 24px;
+    height: 24px;
+
+    margin-right: .8rem;
+
+    cursor: pointer;
+}
+.moreOptionsIcon{
+    width: 24px;
+    height: 24px;
+    transform:rotate(90deg);
+    
+    margin-left: .8rem;
+
+    cursor: pointer;
+}
+.subHeader {
+    width: 100%;
+    height: 49px;
+
+    background-color: #11181C;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input[type="text"] {
+    width: 24rem;
+    height: 35px;
+    border-radius: 15px;
+    background-color:#323739;
+
+    text-align: center;
+    
+}
+input[type="text"]::-webkit-input-placeholder {
+    color:#B1B3B5;
+    font-family: Segoe UI;
+    font-size: .9rem;
+
+}
+label {
+    position: absolute;
+    left: 1.5rem;
+}
+/*==CHATS==*/
+section.chats main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 46px;
+}
+section.chats main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 100%;
+    height: 72px;
+    padding: .5rem .8rem .5rem .8rem;
+
+    background-color: #11181C;
+}
+section.chats main section .photo {
+    width: 49px;
+}
+section.chats main section .photo img {
+    border-radius: 50%;
+
+    width: 49px;
+    height: 49px;
+
+    cursor: pointer;
+}
+section.chats main section .nameAndTalk {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 67%;
+}
+section.chats main section .nameAndTalk p:first-child {
+    color: #f1f1f2eb;
+    font-family: Segoe UI;
+    font-size: 1rem;
+}
+section.chats main section .nameAndTalk p:last-child {
+    color: #B1B3B5;
+    font-family: Segoe UI;
+    font-size: 1rem;
+}
+.viewStatus {
+    width: 15px;
+    height: 10px;
+}
+section.chats main section .hour {
+    color: #B1B3B5;
+    font-family: Segoe UI;
+    font-size: 1.00111rem;
+}

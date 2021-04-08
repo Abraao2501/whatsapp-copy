@@ -1,0 +1,76 @@
+.home {
+    background-color: rgb(38, 45, 49);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 2rem 0rem 0rem 0rem;
+}
+.home header {
+    display: block;
+}
+.home main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 29rem;
+}
+.home main h1 {
+    font-family: Segoe UI ;
+    font-size: 2rem;
+    font-weight: 400;
+
+    color: #f1f1f2eb;
+    text-align: center;
+}
+.home  p {
+    font-family: Segoe UI ;
+    font-size: .9rem;
+    color: rgb(177, 179, 181);
+    text-align: center;
+
+    margin: 1rem 0rem 2rem 0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+    
+}
+
+.home main footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;  
+}
+.line {
+    width: 100%;
+    height: 0.1px;
+    background-color: rgba(241, 241, 242, 0.13);
+
+    margin-bottom: 2rem;
+}
+.home img.laptopIcon {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+.home  a {
+    color: #00AF9C;
+    text-decoration: none;
+    margin-left: 6px;
+}
+/*
+.greenBar {
+    margin-top: 13.7rem;
+    width:100%;
+    height: .5rem;
+    background-color: #00AF9C;
+}
